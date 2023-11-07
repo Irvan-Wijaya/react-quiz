@@ -3,6 +3,7 @@ import QUESTION from "../question";
 import completedLogo from "../assets/quiz-complete.png";
 
 function Quiz() {
+  // question index follow userAnswer length
   const [userAnswer, setUserAnswer] = useState([]);
   const activeQuestionIndex = userAnswer.length;
   const quizCompleted = activeQuestionIndex === QUESTION.length;
