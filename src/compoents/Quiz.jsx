@@ -9,11 +9,14 @@ function Quiz() {
   const activeQuestionIndex = userAnswer.length;
   const quizCompleted = activeQuestionIndex === QUESTION.length;
 
-  const handleSelectAnswer = useCallback(function handleSelectAnswer(selectedAnswer) {
+  const handleSelectAnswer = useCallback(function handleSelectAnswer(
+    selectedAnswer
+  ) {
     setUserAnswer((prevUserAnswers) => {
       return [...prevUserAnswers, selectedAnswer];
     });
-  }, []);
+  },
+  []);
 
   const handleSkipAnswer = useCallback(() => {
     handleSelectAnswer(null);
@@ -37,9 +40,9 @@ function Quiz() {
     <div id="quiz">
       <div id="question">
         <Timer
-          timeout={10000}
-          onTimeout={() => handleSkipAnswer}
           key={activeQuestionIndex}
+          timeout={10000}
+          onTimeout={handleSkipAnswer}
         />
         <h2>{QUESTION[activeQuestionIndex].text}</h2>
         <ul id="answers">
