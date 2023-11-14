@@ -69,4 +69,34 @@ export default [
         'Using an if-else statement.',
       ],
     },
+    {
+      id: 'q8',
+      text: 'Which of the following are the advantages of React.js?',
+      answers: [
+        'All of the above.',
+        'React.js is easy to integrate with other frameworks such as Angular, BackboneJS since it is only a view library.',
+        'React.js can render both on client and server side.',
+        'React.js can increase the applications performance with Virtual DOM.',
+      ],
+    },
+    {
+      id: 'q9',
+      text: 'Which of the following function is used to change the state of the React.js component?',
+      answers: [
+        'this.setState',
+        'this.setChangeState',
+        'this.State{}',
+        'None of the above.',
+      ],
+    },
+    {
+      id: 'q10',
+      text: 'Which of the following best defines the "key" prop?',
+      answers: [
+        '"Key" prop is a way for React to identify a newly added item in a list and compare it during the "diffing" algorithm.',
+        '"Key" prop is used to look pretty, and there is no benefit whatsoever.',
+        'It is one of the attributes in HTML.',
+        'It is NOT commonly used in an array.',
+      ],
+    },
   ];
