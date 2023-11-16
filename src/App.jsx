@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "./compoents/Header";
-import Quiz from "./compoents/Quiz";
+import Header from "./components/Header";
+import Quiz from "./components/Quiz";
 
 function App() {
   return (
